@@ -16,46 +16,63 @@
     <span class="folha folha-3">🌱</span>
   </div>
 
-  <header class="cabecalho">
-    <div class="cabecalho-onda" aria-hidden="true"></div>
-    <div class="container cabecalho-conteudo">
-      <div class="logo-area">
-        <div class="logo-circulo">
+  <header class="site-header" id="site-header">
+    <div class="container header-bar">
+      <div class="header-logo">
+        <div class="logo-circulo logo-circulo-sm">
           <span class="logo-icone" aria-hidden="true">🌱</span>
         </div>
-        <div>
+        <div class="header-titulo">
           <span class="etiqueta-topo">Extensão Rural</span>
           <h1>ATER Digital</h1>
-          <p class="subtitulo">Assistência técnica para o produtor de hortaliças</p>
         </div>
       </div>
+
+      <button
+        class="menu-hamburguer"
+        id="menu-hamburguer"
+        type="button"
+        aria-expanded="false"
+        aria-controls="menu-nav"
+        aria-label="Abrir menu de navegação"
+      >
+        <span class="hamburguer-linhas" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+        <span class="menu-texto">Menu</span>
+      </button>
     </div>
+
+    <nav class="menu-nav" id="menu-nav" aria-label="Menu principal">
+      <div class="container menu-nav-inner">
+        <p class="menu-nav-titulo">Escolha o tópico</p>
+        <button class="aba ativa" data-aba="inicio" type="button">
+          <span class="aba-icone">🏠</span>
+          Início
+        </button>
+        <button class="aba" data-aba="assistente" type="button">
+          <span class="aba-icone">💬</span>
+          Assistente
+        </button>
+        <button class="aba" data-aba="tomate" type="button">
+          <span class="aba-icone">🍅</span>
+          Tomate
+        </button>
+        <button class="aba" data-aba="alface" type="button">
+          <span class="aba-icone">🥬</span>
+          Alface
+        </button>
+        <button class="aba" data-aba="rucula" type="button">
+          <span class="aba-icone">🌿</span>
+          Rúcula
+        </button>
+      </div>
+    </nav>
   </header>
 
-  <nav class="navegacao" aria-label="Menu principal">
-    <div class="container nav-pilulas">
-      <button class="aba ativa" data-aba="inicio" type="button">
-        <span class="aba-icone">🏠</span>
-        Início
-      </button>
-      <button class="aba" data-aba="assistente" type="button">
-        <span class="aba-icone">💬</span>
-        Assistente
-      </button>
-      <button class="aba" data-aba="tomate" type="button">
-        <span class="aba-icone">🍅</span>
-        Tomate
-      </button>
-      <button class="aba" data-aba="alface" type="button">
-        <span class="aba-icone">🥬</span>
-        Alface
-      </button>
-      <button class="aba" data-aba="rucula" type="button">
-        <span class="aba-icone">🌿</span>
-        Rúcula
-      </button>
-    </div>
-  </nav>
+  <div class="header-espacador" aria-hidden="true"></div>
 
   <main class="container">
 
@@ -63,6 +80,10 @@
     <section id="inicio" class="painel ativo">
 
       <!-- 1. Introdução -->
+      <div class="faixa-boas-vindas">
+        <p>Assistência técnica para o produtor de hortaliças</p>
+      </div>
+
       <div class="secao-bloco secao-intro">
         <span class="secao-numero">1</span>
         <div class="secao-conteudo">

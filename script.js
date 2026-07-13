@@ -1,8 +1,51 @@
 (function () {
+  const siteHeader = document.getElementById('site-header');
+  const menuHamburguer = document.getElementById('menu-hamburguer');
+  const menuNav = document.getElementById('menu-nav');
   const abas = document.querySelectorAll('.aba');
   const paineis = document.querySelectorAll('.painel');
   const cards = document.querySelectorAll('.card-cultura');
   const botoesAba = document.querySelectorAll('[data-aba]');
+
+  let overlay = document.querySelector('.menu-overlay');
+  if (!overlay) {
+    overlay = document.createElement('div');
+    overlay.className = 'menu-overlay';
+    overlay.setAttribute('aria-hidden', 'true');
+    document.body.appendChild(overlay);
+  }
+
+  function fecharMenu() {
+    siteHeader.classList.remove('menu-aberto');
+    menuHamburguer.setAttribute('aria-expanded', 'false');
+    menuHamburguer.setAttribute('aria-label', 'Abrir menu de navegação');
+    overlay.classList.remove('visivel');
+    document.body.style.overflow = '';
+  }
+
+  function abrirMenu() {
+    siteHeader.classList.add('menu-aberto');
+    menuHamburguer.setAttribute('aria-expanded', 'true');
+    menuHamburguer.setAttribute('aria-label', 'Fechar menu de navegação');
+    overlay.classList.add('visivel');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function alternarMenu() {
+    if (siteHeader.classList.contains('menu-aberto')) {
+      fecharMenu();
+    } else {
+      abrirMenu();
+    }
+  }
+
+  menuHamburguer.addEventListener('click', alternarMenu);
+
+  overlay.addEventListener('click', fecharMenu);
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') fecharMenu();
+  });
 
   function mostrarAba(id) {
     abas.forEach(function (aba) {
@@ -26,6 +69,7 @@
       if (window.iniciarChatATER) window.iniciarChatATER();
     }
 
+    fecharMenu();
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
