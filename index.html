@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ATER Digital — Hortaliças</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="fundo-decorativo" aria-hidden="true">
+    <span class="folha folha-1">🌿</span>
+    <span class="folha folha-2">🍃</span>
+    <span class="folha folha-3">🌱</span>
+  </div>
+
+  <header class="cabecalho">
+    <div class="cabecalho-onda" aria-hidden="true"></div>
+    <div class="container cabecalho-conteudo">
+      <div class="logo-area">
+        <div class="logo-circulo">
+          <span class="logo-icone" aria-hidden="true">🌱</span>
+        </div>
+        <div>
+          <span class="etiqueta-topo">Extensão Rural</span>
+          <h1>ATER Digital</h1>
+          <p class="subtitulo">Assistência técnica para o produtor de hortaliças</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <nav class="navegacao" aria-label="Menu principal">
+    <div class="container nav-pilulas">
+      <button class="aba ativa" data-aba="inicio" type="button">
+        <span class="aba-icone">🏠</span>
+        Início
+      </button>
+      <button class="aba" data-aba="tomate" type="button">
+        <span class="aba-icone">🍅</span>
+        Tomate
+      </button>
+      <button class="aba" data-aba="alface" type="button">
+        <span class="aba-icone">🥬</span>
+        Alface
+      </button>
+      <button class="aba" data-aba="rucula" type="button">
+        <span class="aba-icone">🌿</span>
+        Rúcula
+      </button>
+    </div>
+  </nav>
+
+  <main class="container">
+
+    <!-- INÍCIO -->
+    <section id="inicio" class="painel ativo">
+      <div class="hero">
+        <div class="hero-texto">
+          <h2>Bem-vindo, produtor!</h2>
+          <p>Orientações práticas e diretas para cultivar <strong>tomate</strong>, <strong>alface</strong> e <strong>rúcula</strong> com mais segurança e produtividade.</p>
+          <div class="hero-chips">
+            <span class="chip">📋 Textos curtos</span>
+            <span class="chip">👁️ Fácil de ler</span>
+            <span class="chip">🌾 Feito para o campo</span>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="hero-circulo tomate-bg">🍅</div>
+          <div class="hero-circulo alface-bg">🥬</div>
+          <div class="hero-circulo rucula-bg">🌿</div>
+        </div>
+      </div>
+
+      <h3 class="secao-titulo">Escolha a cultura</h3>
+
+      <div class="cards-inicio">
+        <article class="card-cultura card-tomate" data-ir="tomate">
+          <div class="card-topo"></div>
+          <div class="card-corpo">
+            <div class="card-icone-wrap">🍅</div>
+            <span class="card-etiqueta">70–90 dias</span>
+            <h3>Tomate</h3>
+            <p>Plantio, tutoramento, adubação e controle de doenças como requeima e murcha.</p>
+            <span class="card-link">Ver orientações <span aria-hidden="true">→</span></span>
+          </div>
+        </article>
+
+        <article class="card-cultura card-alface" data-ir="alface">
+          <div class="card-topo"></div>
+          <div class="card-corpo">
+            <div class="card-icone-wrap">🥬</div>
+            <span class="card-etiqueta">35–50 dias</span>
+            <h3>Alface</h3>
+            <p>Mudas, irrigação, colheita no ponto certo e cuidados com oídio e murcha.</p>
+            <span class="card-link">Ver orientações <span aria-hidden="true">→</span></span>
+          </div>
+        </article>
+
+        <article class="card-cultura card-rucula" data-ir="rucula">
+          <div class="card-topo"></div>
+          <div class="card-corpo">
+            <div class="card-icone-wrap">🌿</div>
+            <span class="card-etiqueta">25–35 dias</span>
+            <h3>Rúcula</h3>
+            <p>Ciclo rápido, semeadura direta, adubação leve e colheita em poucos dias.</p>
+            <span class="card-link">Ver orientações <span aria-hidden="true">→</span></span>
+          </div>
+        </article>
+      </div>
+
+      <div class="dica-geral">
+        <h3>💡 Dica geral para todas as hortaliças</h3>
+        <ul>
+          <li>Prefira plantar de manhã cedo ou no fim da tarde.</li>
+          <li>Mantenha a horta limpa de mato e restos de cultura velha.</li>
+          <li>Regue na base da planta, evitando molhar muito as folhas.</li>
+          <li>Observe a lavoura todo dia — problema visto cedo é mais fácil de resolver.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- TOMATE -->
+    <section id="tomate" class="painel">
+      <div class="cabecalho-cultura tomate">
+        <div class="cultura-emoji-wrap">🍅</div>
+        <div class="cultura-info">
+          <h2>Tomate</h2>
+          <p class="cultura-resumo">Cultura de maior ciclo. Exige tutoramento, adubação regular e atenção às doenças.</p>
+          <div class="cultura-tags">
+            <span class="tag">⏱️ 70–90 dias</span>
+            <span class="tag">📏 Médio porte</span>
+            <span class="tag">☀️ Sol pleno</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="grade-info">
+        <article class="bloco-info">
+          <div class="bloco-cabecalho plantio">
+            <span>🌱</span>
+            <h3>Como plantar</h3>
+          </div>
+          <ul>
+            <li>Use <strong>mudas com 25 a 30 dias</strong>, firmes e sem amarelar.</li>
+            <li>Espaçamento: <strong>50 cm entre plantas</strong> e <strong>1,2 m entre linhas</strong>.</li>
+            <li>Enterre até a primeira folha — a planta solta raiz nova.</li>
+            <li>Coloque o tutor (bambu ou arame) no plantio para não machucar a raiz depois.</li>
+            <li>Evite plantar onde já teve tomate ou batata no último ano.</li>
+          </ul>
+        </article>
+
+        <article class="bloco-info">
+          <div class="bloco-cabecalho adubacao">
+            <span>🧪</span>
+            <h3>Como adubar</h3>
+          </div>
+          <ul>
+            <li><strong>Na cova:</strong> esterco curtido (2 L) + 1 colher de superfosfato simples.</li>
+            <li><strong>15 dias após plantio:</strong> 1 colher de ureia por planta, ao redor do caule.</li>
+            <li><strong>Na floração:</strong> adubo foliar com potássio ou NPK 10-10-10 (seguir rótulo).</li>
+            <li>Não exagere no nitrogênio — dá muita folha e pouco fruto.</li>
+            <li>Adube sempre com o solo úmido e incorpore levemente.</li>
+          </ul>
+        </article>
+
+        <article class="bloco-info">
+          <div class="bloco-cabecalho doencas">
+            <span>🛡️</span>
+            <h3>Doenças e manejo</h3>
+          </div>
+          <ul>
+            <li><strong>Requeima:</strong> manchas escuras nas folhas. Evite molhar folhas, melhore ventilação e use calda bordalesa preventiva.</li>
+            <li><strong>Murcha:</strong> planta murcha mesmo com solo úmido. Não replante no mesmo local; use mudas sadias.</li>
+            <li><strong>Pinta preta:</strong> manchas no fruto. Retire frutos doentes e melhore a limpeza da área.</li>
+            <li><strong>Lagartas:</strong> retire à mão ou use produto biológico (Bacillus thuringiensis).</li>
+            <li>Faça <strong>rotação de culturas</strong> e elimine restos de planta doente.</li>
+          </ul>
+        </article>
+
+        <article class="bloco-info">
+          <div class="bloco-cabecalho colheita">
+            <span>🧺</span>
+            <h3>Como colher</h3>
+          </div>
+          <ul>
+            <li>Colha quando o fruto estiver <strong>vermelho ou levemente rosado</strong>, conforme o mercado.</li>
+            <li>Corte com tesoura ou puxe com cuidado, deixando o pedúnculo (abinha).</li>
+            <li>Colha de manhã, quando está mais fresco.</li>
+            <li>Retire frutos podres ou danificados na hora — evita doença nos outros.</li>
+            <li>Produção começa entre <strong>70 e 90 dias</strong> após o plantio.</li>
+          </ul>
+        </article>
+
+        <article class="bloco-info bloco-largo">
+          <div class="bloco-cabecalho cuidados">
+            <span>✅</span>
+            <h3>Cuidados em geral</h3>
+          </div>
+          <div class="cuidados-grid">
+            <div class="cuidado-item"><span class="cuidado-icone">💧</span><h4>Rega</h4><p>Regue de 2 a 3 vezes por semana. Solo deve ficar úmido, mas sem encharcar.</p></div>
+            <div class="cuidado-item"><span class="cuidado-icone">🪢</span><h4>Condução</h4><p>Amarre o caule ao tutor e tire os brotos (láximas) que saem no axil das folhas.</p></div>
+            <div class="cuidado-item"><span class="cuidado-icone">✂️</span><h4>Desbaste</h4><p>Deixe de 4 a 6 cachos por planta para frutos maiores e mais uniformes.</p></div>
+            <div class="cuidado-item"><span class="cuidado-icone">🌡️</span><h4>Clima</h4><p>Planta bem entre 18 °C e 28 °C. Proteja de geada e de chuva forte no fruto maduro.</p></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ALFACE -->
+    <section id="alface" class="painel">
+      <div class="cabecalho-cultura alface">
+        <div class="cultura-emoji-wrap">🥬</div>
+        <div class="cultura-info">
+          <h2>Alface</h2>
+          <p class="cultura-resumo">Cultura de ciclo curto. Gosta de solo fértil, água constante e sombra leve no calor forte.</p>
+          <div class="cultura-tags">
+            <span class="tag">⏱️ 35–50 dias</span>
+            <span class="tag">💧 Muita água</span>
+            <span class="tag">🌤️ Clima ameno</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="grade-info">
+        <article class="bloco-info">
+          <div class="bloco-cabecalho plantio">
+            <span>🌱</span>
+            <h3>Como plantar</h3>
+          </div>
+          <ul>
+            <li>Pode plantar <strong>mudas</strong> (mais fácil) ou <strong>semeadura direta</strong> em sulcos.</li>
+            <li>Espaçamento: <strong>25 a 30 cm entre plantas</strong> e <strong>40 cm entre linhas</strong>.</li>
+            <li>Enterre a muda até o colo (base), sem cobrir o miolo.</li>
+            <li>Regue logo após plantar — a muda não pode secar nas primeiras horas.</li>
+            <li>No calor, plante à tarde ou use sombrite de 30%.</li>
+          </ul>
+        </article>
+
+        <article class="bloco-info">
+          <div class="bloco-cabecalho adubacao">
+            <span>🧪</span>
+            <h3>Como adubar</h3>
+          </div>
+          <ul>
+            <li><strong>Antes do plantio:</strong> esterco curtido (3 a 5 kg/m²) + NPK 8-28-16 conforme análise.</li>
+            <li><strong>15 dias após plantio:</strong> ureia ou sulfato de amônio, 1 punhado por metro de linha.</li>
+            <li>Alface responde bem a <strong>nitrogênio</strong> — dá folhas maiores e mais verdes.</li>
+            <li>Evite adubo em contato direto com a folha molhada.</li>
+            <li>Adubação foliar pode ajudar se a planta estiver amarelando.</li>
+          </ul>
+        </article>
+
+        <article class="bloco-info">
+          <div class="bloco-cabecalho doencas">
+            <span>🛡️</span>
+            <h3>Doenças e manejo</h3>
+          </div>
+          <ul>
+            <li><strong>Oídio:</strong> pó branco nas folhas. Melhore ventilação, evite excesso de nitrogênio e regue de manhã.</li>
+            <li><strong>Murcha de Fusarium:</strong> planta murcha e morre. Não replante alface no mesmo lugar.</li>
+            <li><strong>Míldio:</strong> manchas amarelas por baixo da folha. Evite folha molhada à noite.</li>
+            <li><strong>Pulgões:</strong> folha enrolada e grudenta. Lave com água forte ou use sabão neutro.</li>
+            <li>Retire plantas doentes e não deixe resto de cultura na horta.</li>
+          </ul>
+        </article>
+
+        <article class="bloco-info">
+          <div class="bloco-cabecalho colheita">
+            <span>🧺</span>
+            <h3>Como colher</h3>
+          </div>
+          <ul>
+            <li>Colha quando o <strong>miolo estiver firme</strong>, mas antes de "espigar" (soltar flor).</li>
+            <li>Corte rente ao solo com faca afiada, de manhã cedo.</li>
+            <li>Alface cresce em <strong>35 a 50 dias</strong>, conforme a variedade e a época.</li>
+            <li>Lave e conserve na sombra — sol direto murcha rápido.</li>
+            <li>Para corte e cresce de novo: corte 3 cm acima do solo.</li>
+          </ul>
+        </article>
+
+        <article class="bloco-info bloco-largo">
+          <div class="bloco-cabecalho cuidados">
+            <span>✅</span>
+            <h3>Cuidados em geral</h3>
+          </div>
+          <div class="cuidados-grid">
+            <div class="cuidado-item"><span class="cuidado-icone">💧</span><h4>Rega</h4><p>Rega leve e frequente. Solo seco faz a alface amargar e ir para flor.</p></div>
+            <div class="cuidado-item"><span class="cuidado-icone">⛱️</span><h4>Sombra</h4><p>No verão, sombrite evita que a folha queime e o miolo abra cedo demais.</p></div>
+            <div class="cuidado-item"><span class="cuidado-icone">🌾</span><h4>Mato</h4><p>Capine com cuidado — mato compete por água e esconde pragas.</p></div>
+            <div class="cuidado-item"><span class="cuidado-icone">🥗</span><h4>Variedade</h4><p>Crespa aguenta mais calor; lisa e americana preferem clima mais ameno.</p></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- RÚCULA -->
+    <section id="rucula" class="painel">
+      <div class="cabecalho-cultura rucula">
+        <div class="cultura-emoji-wrap">🌿</div>
+        <div class="cultura-info">
+          <h2>Rúcula</h2>
+          <p class="cultura-resumo">Cultura rápida e fácil. Ideal para rotação e renda rápida na horta.</p>
+          <div class="cultura-tags">
+            <span class="tag">⏱️ 25–35 dias</span>
+            <span class="tag">🌱 Semeadura direta</span>
+            <span class="tag">❄️ Outono/inverno</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="grade-info">
+        <article class="bloco-info">
+          <div class="bloco-cabecalho plantio">
+            <span>🌱</span>
+            <h3>Como plantar</h3>
+          </div>
+          <ul>
+            <li>Semeie <strong>direto no canteiro</strong>, espalhando a semente de forma uniforme.</li>
+            <li>Cubra com <strong>1 cm de terra fina</strong> e regue com borrifador ou regador fino.</li>
+            <li>Pode plantar o ano todo, mas vai melhor no <strong>outono e inverno</strong>.</li>
+            <li>Para colheita contínua, semeie de <strong>15 em 15 dias</strong>.</li>
+            <li>Germina em 4 a 7 dias. Afine deixando 10 a 15 cm entre plantas.</li>
+          </ul>
+        </article>
+
+        <article class="bloco-info">
+          <div class="bloco-cabecalho adubacao">
+            <span>🧪</span>
+            <h3>Como adubar</h3>
+          </div>
+          <ul>
+            <li><strong>Antes de semear:</strong> esterco curtido (2 kg/m²) bem misturado ao solo.</li>
+            <li>Rúcula não precisa de muita adubação — excesso dá folha grande e pouco sabor.</li>
+            <li>Se a folha ficar amarela, aplique ureia leve (meio punhado por m²).</li>
+            <li>Adubo orgânico bem curtido evita queimar a planta jovem.</li>
+            <li>Evite adubar com folha molhada em pleno sol.</li>
+          </ul>
+        </article>
+
+        <article class="bloco-info">
+          <div class="bloco-cabecalho doencas">
+            <span>🛡️</span>
+            <h3>Doenças e manejo</h3>
+          </div>
+          <ul>
+            <li><strong>Oídio:</strong> manchas brancas. Melhore circulação de ar e não plante muito adensado.</li>
+            <li><strong>Alternariose:</strong> manchas escuras nas folhas. Retire folhas afetadas e rotacione cultura.</li>
+            <li><strong>Pulgões:</strong> comuns no calor. Lave com água ou use extrato de alho.</li>
+            <li><strong>Lagartas pequenas:</strong> retire à mão ou use produto biológico.</li>
+            <li>Com ciclo curto, muitas vezes é melhor <strong>arrancar e replantar</strong> do que tratar muito.</li>
+          </ul>
+        </article>
+
+        <article class="bloco-info">
+          <div class="bloco-cabecalho colheita">
+            <span>🧺</span>
+            <h3>Como colher</h3>
+          </div>
+          <ul>
+            <li>Colha com <strong>25 a 35 dias</strong> após a semeadura.</li>
+            <li>Corte folhas grandes por fora, deixando o miolo crescer de novo.</li>
+            <li>Ou corte tudo rente ao solo (3 cm) para rebrota.</li>
+            <li>Colha de manhã — folha mais crocante e aromática.</li>
+            <li>Antes de florescer o sabor é melhor. Flor indica que passou do ponto.</li>
+          </ul>
+        </article>
+
+        <article class="bloco-info bloco-largo">
+          <div class="bloco-cabecalho cuidados">
+            <span>✅</span>
+            <h3>Cuidados em geral</h3>
+          </div>
+          <div class="cuidados-grid">
+            <div class="cuidado-item"><span class="cuidado-icone">💧</span><h4>Rega</h4><p>Mantenha solo úmido. Seca rápida faz ir para flor e ficar amarga.</p></div>
+            <div class="cuidado-item"><span class="cuidado-icone">🌡️</span><h4>Calor</h4><p>No verão, use sombrite e regue mais — rúcula prefere temperatura amena.</p></div>
+            <div class="cuidado-item"><span class="cuidado-icone">🔄</span><h4>Renovação</h4><p>Após 2 ou 3 cortes, arranque e semeie de novo para produção uniforme.</p></div>
+            <div class="cuidado-item"><span class="cuidado-icone">🧊</span><h4>Armazenamento</h4><p>Lave, seque bem e guarde na geladeira em saco perfurado (dura 3 a 5 dias).</p></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="rodape">
+    <div class="container">
+      <p><strong>ATER Digital</strong> — Informações de apoio ao produtor rural</p>
+      <p class="rodape-nota">Em caso de dúvida ou problema grave na lavoura, procure o técnico da sua região.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
